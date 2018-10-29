@@ -245,6 +245,33 @@ input, button {
   left: -16px;
 }
 
+.app__bubblereply {
+  display: none;
+  float: left;
+  position: relative;
+  width: 21rem;
+  min-height: 6rem;
+  background: rgba(37, 162, 59, 0.8);
+  border-radius: 5px;
+  word-break: break-word;
+  color: white;
+  padding: 5px;
+  margin-top: 2rem;
+  line-height: 4rem;
+}
+
+.app__bubblereply::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  top: 15px;
+  left: -16px;
+  border-right-color:rgba(37, 162, 59, 0.8);
+}
+
 
 .app__bubbleright {
   display:none;
@@ -257,7 +284,6 @@ input, button {
   word-break: break-word;
   color: white;
   padding: 5px;
-  line-height: 18px;
   margin-top: 2rem;
   line-height: 4rem;
 }

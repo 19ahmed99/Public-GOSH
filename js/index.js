@@ -63,18 +63,17 @@ $(document).ready(function() {
   $('#div3').mouseup(function() {
   $('.app__bubbleright:eq('+count+')').css("display","block");
    count++;
+   if ($('#div1').css('display') == 'block')
+{
+  setTimeout(function(){
+   $('.app__bubblereply').show();// or fade, css display however you'd like.
+}, 4000);
+//  $('.app__bubblereply').css("display","block");
+}
 /*
 $('#div2').css("display","block");
 */
 });
-/*
-  $(function() {
 
-      $('#div3').on('mouseup',function() {
-		$('#div2').css("display","block");
-    });
-
-});
-*/
 
 });
