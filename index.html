@@ -6,7 +6,6 @@
 <meta name="viewport" content="initial-scale=1.0,user-scalable=no"/>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css" type="text/css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -32,15 +31,21 @@
           <input type="password" class="login__input pass" placeholder="Password"/>
         </div>
         <button type="button" class="login__submit">Sign in</button>
-        <p class="login__signup">Don't have an account? &nbsp;Ask the staff</p>
+        <p class="login__note">Don't have an account? &nbsp;Ask the staff</p>
       </div>
     </div>
     <div class="app">
       <div class="app__top">
-        <p class="app__hello">Hello!</p>
+        <p class="app__hello">Good morning!</p>
+        <div class="app__textbox1">
+          <p class="app__bubbleleft">Do you want to adjust the temperature? </p>
+          <p class="app__bubbleright">Yes please. </p>
+          <p class="app__bubbleright">The room is too hot. </p>
+        </div>
       </div>
+
       <div class = "app__voice" >
-        <a class="fa fa-microphone fa-2x"></a>
+        <a id="div3" class="fa fa-microphone fa-2x"></a>
       </div>
       <div class="app__logout">
         <a class="fa fa-caret-left"> Log out</a>
